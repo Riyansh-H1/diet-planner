@@ -1,0 +1,43 @@
+<!-- Take user inputs (age, gender, height, weight, activity, hemoglobin) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Dietplanner.css') }}">
+</head>
+<body class="body">
+    <nav class="navbar">
+        <ul class="nav-list">
+        <div class="logo"><img
+        src="Diet Plan.jpg"
+                    alt="Logo"></div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#ContactUs" class="contactus">Contact us</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" class="Search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="diet-card" id="dietform" method="POST" action="/result">
+            <!-- method="POST" action="/submit" -->
+            <h2>Diet Plan Optimizer</h2>
+            <p><b>Enter your details to generate a personalized diet plan</b></p>
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="text" name="gender" placeholder="Gender" required>
+            <input type="number" name="height" placeholder="Height (cm)" required>
+            <input type="number" name="weight" placeholder="Weight (kg)" required>
+            <input type="text" name="activity" placeholder="Activity Level" required>
+            <input type="number" name="hemoglobin" placeholder="Hemoglobin Level" required>
+
+            <button type="submit">Generate Diet Plan</button>
+        </form>   
+
+</body>
