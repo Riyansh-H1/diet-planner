@@ -92,23 +92,27 @@ def generate_meal_plan(user_data, foods):
     for food in foods:
         score = 0
 
-        if food["calories"] < calorie_limit / 4:
+        # calorie-based heuristic
+        if food["calories"] <= calorie_limit / 3:
             score += 1
 
-        if low_hb and food["iron"] > 3:
-            score += 2
+        # iron-based heuristic for low hemoglobin
+        if low_hb and food["iron"] >= 2:
+            score += 1
 
-        if score >= 2:
+        # selection condition (same logic, realistic threshold)
+        if score >= 1:
             if food["category"] == "breakfast":
                 meal_plan["breakfast"].append(food)
             elif food["category"] == "lunch":
                 meal_plan["lunch"].append(food)
             elif food["category"] == "dinner":
                 meal_plan["dinner"].append(food)
-            else:
+            elif food["category"] == "snacks":
                 meal_plan["snacks"].append(food)
 
     return meal_plan
+
 
 
 def calculate_total_calories(meal_plan):

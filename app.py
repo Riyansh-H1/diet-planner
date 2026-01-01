@@ -34,10 +34,11 @@ def submit():
         "calories": daily_calories
     }
     foods = load_foods()
-
+    print(user_data)
+    print(foods)
     meal_plan = generate_meal_plan(user_data, foods)
     total_calories = calculate_total_calories(meal_plan)
-
+    print(meal_plan)
     return render_template(
         "result.html",
         bmi=bmi,
@@ -47,6 +48,7 @@ def submit():
         meal_plan=meal_plan,
         total_calories=total_calories
     )
+
 
 if __name__ == "__main__":
     app.run(debug=True)

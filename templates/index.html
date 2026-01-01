@@ -36,11 +36,13 @@
             <input type="number" name="height" placeholder="Height (cm)" required>
             <input type="number" step="any" name="weight" placeholder="Weight (kg)" required>
             <label for="language" placeholder="Activity"></label>
-            <select name="activity" id="activity" placeholder="Activity">
-            <option value="high">High Activity</option>
-            <option value="moderate">Moderate Activity</option>
-            <option value="low">Low Activity</option>
+            <select name="activity" required>
+            <option value="" disabled selected>Select activity level</option>
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
             </select>
+
             <input type="number" step="any" name="hemoglobin" placeholder="Hemoglobin Level" required>
 
             <button type="submit">Generate Diet Plan</button>
