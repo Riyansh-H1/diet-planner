@@ -1,8 +1,30 @@
+import json
+
+def load_foods():
+    with open("foods.json", "r") as file:
+        return json.load(file)
+
 def calculate_bmi(height_cm, weight_kg):
     
     height_m = height_cm / 100
     bmi = weight_kg / (height_m ** 2)
     return round(bmi, 2)
+
+def score_food(food, bmi, hemoglobin):
+    score = 0
+
+    score += food["protein"] * 2
+
+    if hemoglobin < 12:
+        score += food["iron"] * 5
+
+    if bmi < 18.5:  # underweight
+        score += food["calories"] / 10
+    elif bmi > 25:  # overweight
+        score -= food["calories"] / 15
+
+    return score
+
 def get_bmi_category(bmi, age, gender):
     if age<20:
         if gender == "male":
@@ -46,3 +68,52 @@ def get_bmi_category(bmi, age, gender):
             return "Overweight", "May increase risk of lifestyle-related issues."
         else:
             return "Obese", "Higher health risk, balanced diet advised."
+        
+def calculate_daily_calories(weight, activity):
+    # very simple logic for first-sem project
+    if activity == "low":
+        return int(weight * 30)
+    elif activity == "moderate":
+        return int(weight * 35)
+    else:  # high activity
+        return int(weight * 40)
+
+def generate_meal_plan(user_data, foods):
+    meal_plan = {
+        "breakfast": [],
+        "lunch": [],
+        "dinner": [],
+        "snacks": []
+    }
+
+    calorie_limit = user_data["calories"]
+    low_hb = user_data["hemoglobin"] < 12
+
+    for food in foods:
+        score = 0
+
+        if food["calories"] < calorie_limit / 4:
+            score += 1
+
+        if low_hb and food["iron"] > 3:
+            score += 2
+
+        if score >= 2:
+            if food["category"] == "breakfast":
+                meal_plan["breakfast"].append(food)
+            elif food["category"] == "lunch":
+                meal_plan["lunch"].append(food)
+            elif food["category"] == "dinner":
+                meal_plan["dinner"].append(food)
+            else:
+                meal_plan["snacks"].append(food)
+
+    return meal_plan
+
+
+def calculate_total_calories(meal_plan):
+    total = 0
+    for meal in meal_plan:
+        for food in meal_plan[meal]:
+            total += food["calories"]
+    return total

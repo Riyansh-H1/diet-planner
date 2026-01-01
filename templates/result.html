@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Diet Plan Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="result.css">
 </head>
-<body>
-    <h1>Diet Plan Result</h1>
+<body class="body">
+    <nav class="navbar">
+        <ul class="nav-list">
+        <div class="logo"><img
+        src="Diet Plan.jpg"
+                    alt="Logo"></div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#ContactUs" class="contactus">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="BMI">
+            <h2>Your Health Report</h2>
+            <p><strong>BMI:</strong> {{ bmi }}</p>
+            <p><strong>Category:</strong> {{ category }}</p>
+            <p>{{ explanation }}</p>
 
-    <p><strong>BMI:</strong> {{ bmi }}</p>
-    <p><strong>Category:</strong> {{ category }}</p>
-    <p><strong>Explanation:</strong> {{ explanation }}</p>
+        </div>
+    </section>
+    <section class="meal-heading">
+        <h1>Meal Plan</h1>
+    </section>
+    <section class="meal-section">
+        <div class="meal">
+            <h2>Breakfast:</h2>
+            <p>Healthy start to boost your metabolism.</p>
+        </div>
 
+        <div class="meal">
+            <h2>Lunch:</h2>
+            <p>Balanced meal for sustained energy.</p>
+        </div>
+
+        <div class="meal">
+            <h2>High Tea:</h2>
+            <p>Light snacks to keep hunger away.</p>
+        </div>
+
+        <div class="meal">
+            <h2>Dinner:</h2>
+            <p>Light and nutritious for better digestion.</p>
+        </div>
+    </section>
 </body>
 </html>

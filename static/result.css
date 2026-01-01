@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap'); 
+
+.navbar{
+    display: flex;
+    align-items: left;
+    justify-content: left;  
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 100%;
+
+    border-radius: 50px;
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none ;
+    text-align: center;
+    padding: 8px 4px;
+    margin: 8px;
+    font-size: 20px;
+    width: 100%;
+}
+.contactus{
+  width: auto;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-style: bold;
+}  
+
+.nav-list li a:hover{
+    font-weight: bold;
+    font-style: italic;
+    color: #6249df;
+    font-style: 'Ubuntu', sans-serif; 
+}
+
+.body{
+    height: 100vh;
+    background: linear-gradient(135deg, #1d976c, #9ff8c0);
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+}
+.container {
+    margin-top: 63px;              
+    height: 30vh;                  
+    width: 100%;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), #cfc4ff);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    color: #1d976c;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+
+    font-family: 'Playfair Display', serif;
+
+
+}
+.BMI p{
+    align-items: left;
+    padding-left: 15px;
+    line-height: 1.6;      
+    margin-bottom: 30px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meal-heading {
+    height: 18vh;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    color: #1d976c;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.9),
+        #ede9fe
+    );
+
+    padding: 12px 40px;
+    border-radius: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.meal-section {
+    width: 100%;
+    padding: 5px 3px 5px 3px; /* top right bottom left */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.meal {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.meal h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #1d976c;
+}
+
+.meal p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* @media (max-width: 900px) {
+    .meal-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .meal-section {
+        grid-template-columns: 1fr;
+    }
+} */
+
+
+
