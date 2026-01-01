@@ -33,22 +33,28 @@
     <section class="meal-section">
         <div class="meal-card">
         <h3>Breakfast:</h3>
-        <p>{{ meal_plan.breakfast }}</p>
+        <p>{{ meal_plan.breakfast.name }}</p>
+        <p>Calories: {{ meal_plan.breakfast.calories }}</p>
+        <p>iron: {{ meal_plan.breakfast.iron }}</p>
         </div>
 
         <div class="meal-card">
             <h3>Lunch:</h3>
-            <p>{{ meal_plan.lunch }}</p>
+            <p>{{ meal_plan.lunch.name }}</p>
+            <p>Calories: {{ meal_plan.lunch.calories }}</p>
+            <p>iron: {{ meal_plan.lunch.iron }}</p>
         </div>
 
-        <div class="meal-card">
+        <!-- div class="meal-card">
             <h3>High Tea:</h3>
             <p>{{ meal_plan.high_tea }}</p>
-        </div>
+        </div -->
 
         <div class="meal-card">
             <h3>Dinner:</h3>
-            <p>{{ meal_plan.dinner }}</p>
+            <p>{{ meal_plan.dinner.name }}</p>
+            <p>Calories: {{ meal_plan.dinner.calories }}</p>
+            <p>iron: {{ meal_plan.dinner.iron }}</p>
         </div>
     </section>
 </body>

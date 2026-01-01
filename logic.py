@@ -80,10 +80,17 @@ def calculate_daily_calories(weight, activity):
 
 def generate_meal_plan(user_data, foods):
     meal_plan = {
-        "breakfast": [],
-        "lunch": [],
-        "dinner": [],
-        "snacks": []
+        "breakfast": None,
+        "lunch": None,
+        "dinner": None,
+        "snacks": None
+    }
+
+    best_scores = {
+        "breakfast": -1,
+        "lunch": -1,
+        "dinner": -1,
+        "snacks": -1
     }
 
     calorie_limit = user_data["calories"]
@@ -92,32 +99,28 @@ def generate_meal_plan(user_data, foods):
     for food in foods:
         score = 0
 
-        # calorie-based heuristic
+        # calorie heuristic
         if food["calories"] <= calorie_limit / 3:
             score += 1
 
-        # iron-based heuristic for low hemoglobin
+        # iron heuristic (only if low Hb)
         if low_hb and food["iron"] >= 2:
             score += 1
 
-        # selection condition (same logic, realistic threshold)
-        if score >= 1:
-            if food["category"] == "breakfast":
-                meal_plan["breakfast"].append(food)
-            elif food["category"] == "lunch":
-                meal_plan["lunch"].append(food)
-            elif food["category"] == "dinner":
-                meal_plan["dinner"].append(food)
-            elif food["category"] == "snacks":
-                meal_plan["snacks"].append(food)
+        category = food["category"]
+
+        if category in meal_plan:
+            if score > best_scores[category]:
+                best_scores[category] = score
+                meal_plan[category] = food
 
     return meal_plan
 
-
-
 def calculate_total_calories(meal_plan):
     total = 0
-    for meal in meal_plan:
-        for food in meal_plan[meal]:
-            total += food["calories"]
+
+    for meal in meal_plan.values():
+        if meal is not None:
+            total += meal["calories"]
+
     return total
