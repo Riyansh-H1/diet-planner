@@ -4,7 +4,8 @@ from logic import (
     get_bmi_category,
     calculate_daily_calories,
     generate_meal_plan,
-    calculate_total_calories
+    calculate_total_calories,
+    load_foods
 )
 
 app = Flask(__name__)
@@ -19,14 +20,22 @@ def submit():
     gender = request.form["gender"]
     height = float(request.form["height"])
     weight = float(request.form["weight"])
-    activity = request.form["activity"]
+    activity = request.form.get("activity")
+
     hemoglobin = float(request.form["hemoglobin"])
 
     bmi = calculate_bmi(height, weight)
     category, explanation = get_bmi_category(bmi, age, gender)
 
     daily_calories = calculate_daily_calories(weight, activity)
-    meal_plan = generate_meal_plan(bmi, hemoglobin)
+    user_data = {
+        "bmi": bmi,
+        "hemoglobin": hemoglobin,
+        "calories": daily_calories
+    }
+    foods = load_foods()
+
+    meal_plan = generate_meal_plan(user_data, foods)
     total_calories = calculate_total_calories(meal_plan)
 
     return render_template(

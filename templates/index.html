@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diet Plan Optimizer</title>
-    <link rel="stylesheet" href="Dietplanner.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
 </head>
 <body class="body">
     <nav class="navbar">
         <ul class="nav-list">
         <div class="logo"><img
-        src="Diet Plan.jpg"
+        src="{{ url_for('static', filename='Diet Plan.jpg') }}"
                     alt="Logo"></div>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -26,21 +27,21 @@
         </div>
     </nav>
     <div class="container">
-        <form class="diet-card" id="dietform">
+        <form class="diet-card" id="dietform" action="/result" method="POST">
             <!-- method="POST" action="/submit" -->
             <h2>Diet Plan Optimizer</h2>
             <p><b>Enter your details to generate a personalized diet plan</b></p>
             <input type="number" name="age" placeholder="Age" required>
             <input type="text" name="gender" placeholder="Gender" required>
             <input type="number" name="height" placeholder="Height (cm)" required>
-            <input type="float" name="weight" placeholder="Weight (kg)" required>
+            <input type="number" step="any" name="weight" placeholder="Weight (kg)" required>
             <label for="language" placeholder="Activity"></label>
-            <select name="language" id="language" placeholder="Activity">
+            <select name="activity" id="activity" placeholder="Activity">
             <option value="high">High Activity</option>
             <option value="moderate">Moderate Activity</option>
             <option value="low">Low Activity</option>
             </select>
-            <input type="float" name="hemoglobin" placeholder="Hemoglobin Level" required>
+            <input type="number" step="any" name="hemoglobin" placeholder="Hemoglobin Level" required>
 
             <button type="submit">Generate Diet Plan</button>
         </form>   

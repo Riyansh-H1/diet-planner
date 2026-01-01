@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
 </head>
 <body class="body">
     <nav class="navbar">
         <ul class="nav-list">
         <div class="logo"><img
-        src="Diet Plan.jpg"
+        src="{{ url_for('static', filename='Diet Plan.jpg') }}"
                     alt="Logo"></div>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
