@@ -1,0 +1,46 @@
+﻿food_name,meal-type,calories,protein,iron,is_veg,category
+Oats,breakfast,389,17,4.7,yes,grain
+Vegetable Poha,breakfast,270,6,2.6,yes,grain
+Upma,breakfast,250,5,1.8,yes,grain
+Idli,breakfast,146,5,0.9,yes,grain
+Plain Dosa,breakfast,168,4,1.2,yes,grain
+Egg Bhurji,breakfast,180,12,1.8,no,protein
+Milk,breakfast,103,8,0.1,yes,diary
+Banana,breakfast,105,1.3,0.3,yes,fruit
+Apple,snack,52,0.3,0.1,yes,fruit
+Orange,snack,62,1.2,0.1,yes,fruit
+Papaya,snack,43,0.5,0.3,yes,fruit
+Roasted Chana,snack,120,6,2.7,yes,protein
+Peanuts,snack,170,7,1.3,yes,protein
+Sprouted Moong,snack,100,8,1.8,yes,protein
+Curd,snack,59,10,0.1,yes,diary
+Steamed Rice,lunch,130,2.4,0.2,yes,grain
+Chapati,lunch,120,3.1,1.1,yes,grain
+Brown Rice,lunch,123,2.7,0.4,yes,grain
+Dal Tadka,lunch,230,18,3.3,yes,protein
+Rajma Curry,lunch,225,15,2.9,yes,protein
+Chole,lunch,269,14,4.7,yes,protein
+Paneer Curry,lunch,265,18,0.4,yes,diary
+Curd Rice,lunch,190,6,0.5,yes,grain
+Palak Sabzi,lunch,23,2.9,2.7,yes,vegetable
+Mixed Vegetable Sabzi,lunch,120,4,1.5,yes,vegetable
+Carrot Sabzi,lunch,41,0.9,0.3,yes,vegetable
+Grilled Chicken,dinner,165,31,1,no,protein
+Fish Curry,dinner,206,22,1.2,no,protein
+Tofu Curry,dinner,144,17,5.4,yes,protein
+Soybean Curry,dinner,296,36,15.7,yes,protein
+Vegetable Khichdi,dinner,215,8,2.1,yes,grain
+Vegetable Soup,dinner,90,3,1,yes,vegetable
+Simple Salad,dinner,70,2,1.2,yes,vegetable
+Sweet Potato Sabzi,dinner,112,2,0.8,yes,vegetable
+Paneer Bhurji,dinner,280,20,0.5,yes,diary
+Buttermilk,snack,40,3,0.1,yes,diary
+Dates,snack,66,0.4,0.9,yes,fruit
+Raisins,snack,85,1.1,0.8,yes,fruit
+Pumpkin Seeds,snack,151,7,2.5,yes,protein
+Sunflower Seeds,snack,164,6,1.9,yes,protein
+Corn Chaat,lunch,132,3.4,0.5,yes,grain
+Beetroot Sabzi,lunch,43,1.6,0.8,yes,vegetable
+Mushroom Sabzi,lunch,22,3.1,0.5,yes,vegetable
+Pomegranate,snack,83,1.7,0.3,yes,fruit
+Masoor Dal Soup,dinner,158,9,2.4,yes,protein

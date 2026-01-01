@@ -1,0 +1,407 @@
+[
+    {
+        "food_name": "Oats",
+        "meal-type": "breakfast",
+        "calories": 389,
+        "protein": 17.0,
+        "iron": 4.7,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Vegetable Poha",
+        "meal-type": "breakfast",
+        "calories": 270,
+        "protein": 6.0,
+        "iron": 2.6,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Upma",
+        "meal-type": "breakfast",
+        "calories": 250,
+        "protein": 5.0,
+        "iron": 1.8,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Idli",
+        "meal-type": "breakfast",
+        "calories": 146,
+        "protein": 5.0,
+        "iron": 0.9,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Plain Dosa",
+        "meal-type": "breakfast",
+        "calories": 168,
+        "protein": 4.0,
+        "iron": 1.2,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Egg Bhurji",
+        "meal-type": "breakfast",
+        "calories": 180,
+        "protein": 12.0,
+        "iron": 1.8,
+        "is_veg": "no",
+        "category": "protein"
+    },
+    {
+        "food_name": "Milk",
+        "meal-type": "breakfast",
+        "calories": 103,
+        "protein": 8.0,
+        "iron": 0.1,
+        "is_veg": "yes",
+        "category": "diary"
+    },
+    {
+        "food_name": "Banana",
+        "meal-type": "breakfast",
+        "calories": 105,
+        "protein": 1.3,
+        "iron": 0.3,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Apple",
+        "meal-type": "snack",
+        "calories": 52,
+        "protein": 0.3,
+        "iron": 0.1,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Orange",
+        "meal-type": "snack",
+        "calories": 62,
+        "protein": 1.2,
+        "iron": 0.1,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Papaya",
+        "meal-type": "snack",
+        "calories": 43,
+        "protein": 0.5,
+        "iron": 0.3,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Roasted Chana",
+        "meal-type": "snack",
+        "calories": 120,
+        "protein": 6.0,
+        "iron": 2.7,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Peanuts",
+        "meal-type": "snack",
+        "calories": 170,
+        "protein": 7.0,
+        "iron": 1.3,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Sprouted Moong",
+        "meal-type": "snack",
+        "calories": 100,
+        "protein": 8.0,
+        "iron": 1.8,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Curd",
+        "meal-type": "snack",
+        "calories": 59,
+        "protein": 10.0,
+        "iron": 0.1,
+        "is_veg": "yes",
+        "category": "diary"
+    },
+    {
+        "food_name": "Steamed Rice",
+        "meal-type": "lunch",
+        "calories": 130,
+        "protein": 2.4,
+        "iron": 0.2,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Chapati",
+        "meal-type": "lunch",
+        "calories": 120,
+        "protein": 3.1,
+        "iron": 1.1,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Brown Rice",
+        "meal-type": "lunch",
+        "calories": 123,
+        "protein": 2.7,
+        "iron": 0.4,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Dal Tadka",
+        "meal-type": "lunch",
+        "calories": 230,
+        "protein": 18.0,
+        "iron": 3.3,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Rajma Curry",
+        "meal-type": "lunch",
+        "calories": 225,
+        "protein": 15.0,
+        "iron": 2.9,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Chole",
+        "meal-type": "lunch",
+        "calories": 269,
+        "protein": 14.0,
+        "iron": 4.7,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Paneer Curry",
+        "meal-type": "lunch",
+        "calories": 265,
+        "protein": 18.0,
+        "iron": 0.4,
+        "is_veg": "yes",
+        "category": "diary"
+    },
+    {
+        "food_name": "Curd Rice",
+        "meal-type": "lunch",
+        "calories": 190,
+        "protein": 6.0,
+        "iron": 0.5,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Palak Sabzi",
+        "meal-type": "lunch",
+        "calories": 23,
+        "protein": 2.9,
+        "iron": 2.7,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Mixed Vegetable Sabzi",
+        "meal-type": "lunch",
+        "calories": 120,
+        "protein": 4.0,
+        "iron": 1.5,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Carrot Sabzi",
+        "meal-type": "lunch",
+        "calories": 41,
+        "protein": 0.9,
+        "iron": 0.3,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Grilled Chicken",
+        "meal-type": "dinner",
+        "calories": 165,
+        "protein": 31.0,
+        "iron": 1.0,
+        "is_veg": "no",
+        "category": "protein"
+    },
+    {
+        "food_name": "Fish Curry",
+        "meal-type": "dinner",
+        "calories": 206,
+        "protein": 22.0,
+        "iron": 1.2,
+        "is_veg": "no",
+        "category": "protein"
+    },
+    {
+        "food_name": "Tofu Curry",
+        "meal-type": "dinner",
+        "calories": 144,
+        "protein": 17.0,
+        "iron": 5.4,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Soybean Curry",
+        "meal-type": "dinner",
+        "calories": 296,
+        "protein": 36.0,
+        "iron": 15.7,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Vegetable Khichdi",
+        "meal-type": "dinner",
+        "calories": 215,
+        "protein": 8.0,
+        "iron": 2.1,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Vegetable Soup",
+        "meal-type": "dinner",
+        "calories": 90,
+        "protein": 3.0,
+        "iron": 1.0,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Simple Salad",
+        "meal-type": "dinner",
+        "calories": 70,
+        "protein": 2.0,
+        "iron": 1.2,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Sweet Potato Sabzi",
+        "meal-type": "dinner",
+        "calories": 112,
+        "protein": 2.0,
+        "iron": 0.8,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Paneer Bhurji",
+        "meal-type": "dinner",
+        "calories": 280,
+        "protein": 20.0,
+        "iron": 0.5,
+        "is_veg": "yes",
+        "category": "diary"
+    },
+    {
+        "food_name": "Buttermilk",
+        "meal-type": "snack",
+        "calories": 40,
+        "protein": 3.0,
+        "iron": 0.1,
+        "is_veg": "yes",
+        "category": "diary"
+    },
+    {
+        "food_name": "Dates",
+        "meal-type": "snack",
+        "calories": 66,
+        "protein": 0.4,
+        "iron": 0.9,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Raisins",
+        "meal-type": "snack",
+        "calories": 85,
+        "protein": 1.1,
+        "iron": 0.8,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Pumpkin Seeds",
+        "meal-type": "snack",
+        "calories": 151,
+        "protein": 7.0,
+        "iron": 2.5,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Sunflower Seeds",
+        "meal-type": "snack",
+        "calories": 164,
+        "protein": 6.0,
+        "iron": 1.9,
+        "is_veg": "yes",
+        "category": "protein"
+    },
+    {
+        "food_name": "Corn Chaat",
+        "meal-type": "lunch",
+        "calories": 132,
+        "protein": 3.4,
+        "iron": 0.5,
+        "is_veg": "yes",
+        "category": "grain"
+    },
+    {
+        "food_name": "Beetroot Sabzi",
+        "meal-type": "lunch",
+        "calories": 43,
+        "protein": 1.6,
+        "iron": 0.8,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Mushroom Sabzi",
+        "meal-type": "lunch",
+        "calories": 22,
+        "protein": 3.1,
+        "iron": 0.5,
+        "is_veg": "yes",
+        "category": "vegetable"
+    },
+    {
+        "food_name": "Pomegranate",
+        "meal-type": "snack",
+        "calories": 83,
+        "protein": 1.7,
+        "iron": 0.3,
+        "is_veg": "yes",
+        "category": "fruit"
+    },
+    {
+        "food_name": "Masoor Dal Soup",
+        "meal-type": "dinner",
+        "calories": 158,
+        "protein": 9.0,
+        "iron": 2.4,
+        "is_veg": "yes",
+        "category": "protein"
+    }
+]

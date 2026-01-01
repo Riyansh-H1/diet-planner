@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 100%;
+
+    border-radius: 50px;
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none ;
+    text-align: center;
+    padding: 8px 4px;
+    margin: 8px;
+    font-size: 20px;
+    width: 100%;
+}
+.contactus{
+  width: auto;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: yellow;
+    font-style: bold;
+}  
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: darkorchid;
+    font-style: 'Ubuntu', sans-serif; 
+}
+
+.rightnav{
+    text-align: right;
+    width: 50%;
+    padding: 30px;
+    border-radius: 100px;
+    
+}
+.rightnav button{
+    padding: 2px;
+    /* box-shadow: 0 0 10px rgba(29, 151, 108, 0.4); */
+    border-radius: 5px;
+    background-color:white;
+    border-color:black;
+}
+
+.rightnav input{
+    padding: 2px;
+    /* box-shadow: 0 0 10px rgba(29, 151, 108, 0.4); */
+    border-radius: 5px;
+    background-color:white;
+    border-color:black;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1d976c, #9ff8c0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diet-card {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.diet-card h2 {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    color: #1d976c;
+}
+
+.diet-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.diet-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.diet-card input:focus {
+    border-color: #1d976c;
+    outline: none;
+    box-shadow: 0 0 10px rgba(29, 151, 108, 0.4);
+}
+
+.diet-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: #1d976c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.diet-card button:hover {
+    background: #157a55;
+    box-shadow: 0 0 10px rgba(29, 151, 108, 0.4);
+}
