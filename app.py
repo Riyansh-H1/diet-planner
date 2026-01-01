@@ -18,7 +18,7 @@ def submit():
     hemoglobin = request.form["hemoglobin"]
 
     bmi = calculate_bmi(height, weight)
-    category, explanation = get_bmi_category(bmi)
+    category, explanation = get_bmi_category(bmi, age, gender)
 
     return render_template(
         "result.html",
